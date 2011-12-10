@@ -32,7 +32,7 @@ the Spring machinery is pretty much obsolete.
 
 Distributed under the [GNU General Public License][gpl].
 
-Copyright (C) 2011 Nick Rothwell
+Copyright (C) 2011 Nick Rothwell.
 
 [max]: http://cycling74.com/products/max/
 [jython]: https://github.com/cassiel/net.loadbang.jython
