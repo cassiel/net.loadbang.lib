@@ -2,10 +2,11 @@
 
 This is a hotch-potch of rather antiquated utilities for [MaxMSP][max]
 used by the rest of the `net.loadbang` suite. The prebuilt JAR files
-are in the sub-directory `distribution` - copy all of the JAR files
-here, except the cycling74 file into `java/lib` in your Max
-distribution - or the library can be built from the enclosed sources
-using Maven.
+are in the sub-directory `distribution`, or the library can be built
+from the enclosed sources using Maven. To install without building,
+copy all the JAR files from `distribution` *except* the
+`max-[...].jar` file into the `java/lib` directory of your Max
+installation.
 
 The Maven build is pretty straightforward - import into Eclipse or run
 Maven from the command line. One wrinkle: the `max.jar` file isn't
