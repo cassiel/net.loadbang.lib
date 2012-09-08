@@ -13,23 +13,18 @@ Maven from the command line. One wrinkle: the `max.jar` file isn't
 available in any Maven repository, so install the one we've included
 in this distribution into your local repository as follows:
 
-	mvn install:install-file \
-	    -Dfile=com.cycling74.max-5.1.9.jar \
-	    -DgroupId=com.cycling74 \
-	    -DartifactId=com.cycling74.max \
-	    -Dversion=5.1.9 \
-	    -Dpackaging=jar \
-	    -DgeneratePom=true
+        mvn install:install-file \
+            -Dfile=com.cycling74.max-5.1.9.jar \
+            -DgroupId=com.cycling74 \
+            -DartifactId=com.cycling74.max \
+            -Dversion=5.1.9 \
+            -Dpackaging=jar \
+            -DgeneratePom=true
 
 (We pulled the `max.jar` file from MaxMSP 5.1.9, but there are no
 significant advances that we know of in the version shipping with
 Max6. All of our `net.loadbang` projects have explicit dependencies on
 the `5.1.9` version, although they run happily under Max6.)
-
-The dependencies on the Spring Framework are largely vestigial: at one
-stage we had a Spring-based build tool for Max externals, but with the
-advent of [Jython][jython] and [Clojure][clojure] employed as DSLs,
-the Spring machinery is pretty much obsolete.
 
 ## License
 
